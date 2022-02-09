@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="{{ get_asset_url('./assets/css/main.css') }}">
 </head>
 
+{% dnd_area "no_structure", label="No Structure" %}
+
 {% set body_class = [builtin_body_classes] %}
 
 <body class="{{ body_class|join(' ')|trim }}">
@@ -37,7 +39,7 @@
 			%}
         </main>
     </div>
-
+    {% end_dnd_area %}
     {# Includes #}
     {{ standard_footer_includes }}
 
