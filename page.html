@@ -16,6 +16,8 @@
     {# Favicon #}
     {% if site_settings.favicon_src %}
     <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    {# Mumtaz code #}
+    {{require_css(get_asset_url('/assets/css/layout.css'))}}
     {# Includes #}
     {{ standard_header_includes }}
     {# Styles #}
